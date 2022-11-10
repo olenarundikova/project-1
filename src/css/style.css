@@ -1,20 +1,26 @@
-body {background-color: #ffe2b0;
+body {
+    background-color: #ffe2b0;
 
 }
-header {text-align: center;
-margin-bottom: 20px; 
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
 
 }
 
 h1 {
     font-size: 15px;
 }
-ul {list-style-type: none;
+
+ul {
+    list-style-type: none;
     text-align: center;
-    padding:0px;
+    padding: 0px;
 }
 
-li {display: inline;
+li {
+    display: inline;
     margin-right: 100px;
 }
 
@@ -25,22 +31,34 @@ a {
 }
 
 
-li:last-child {margin-right: 0px;
+li:last-child {
+    margin-right: 0px;
 
 }
 
-nav {margin-bottom: 20px;
+nav {
+    margin-bottom: 20px;
 
 }
 
 .section-about {
     height: 640px;
     background: url(../img/01-Картинка-фона.jpg) center/cover;
-
+    position: relative;
 }
 
 .section-about__block {
     width: 420px;
     height: 190px;
     background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
+    position: absolute;
+    top: 349px;
+    left: 730px;
+}
+
+.section-about__border {
+    width: 390px;
+    height: 160px;
+    border: 1px solid black;
+
 }
