@@ -1,0 +1,31 @@
+$brand-color: #ffe2b0;
+$accent-color: #f15b40;
+$text-main-color: black;
+
+$main-font-size: 12px;
+$title-font-size: 96px;
+$subtitle-font-size: 36px;
+$link-font-size: 18px;
+
+$margin: 20px;
+
+
+@font-face {
+    font-family: 'Philosopher';
+    src: local('Philosopher');
+    src: url(../fonts/Philosopher-Regular.ttf)
+}
+
+@mixin font-main {
+    font-family:'Philosopher';
+}
+
+
+@mixin font-accent {
+    font-family: 'Roboto';
+}
+@mixin link {
+    color: $text-main-color;
+    text-decoration: none;
+    font-size: $link-font-size;
+}

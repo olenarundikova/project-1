@@ -1,3 +1,7 @@
+@import "./normalize.css";
+@import "./theme.scss";
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +13,7 @@
 }
 
 body {
-    background-color: #ffe2b0;
+    background-color: $brand-color;
 
 }
 
@@ -31,9 +35,7 @@ li {
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
+    @include link;
 }
 
 
@@ -76,15 +78,15 @@ nav {
 }
 
 .section-about__title {
-    font-size: 36px;
+    font-size: $subtitle-font-size;
     margin: 0;
     margin-bottom: 9px;
-    font-family: 'Philosopher';
+    @include font-main;
 
 }
 
 .section-about__text {
-    font-size: 12px;
+    font-size: $main-font-size;
     margin: 0;
 }
 
@@ -106,18 +108,18 @@ nav {
 }
 
 .section-description__title {
-    font-size: 96px;
+    font-size: $title-font-size;
     margin: 0px;
     text-align: center;
-    font-family: 'Philosopher';
+    @include font-main;
 }
 
 .red {
-    color: #f15b40;
+    color: $accent-color;
 }
 
 .section-description__text {
-    font-size: 18px;
+    font-size: $link-font-size;
     margin: 0px;
     text-align: center;
     width: 1000px;
@@ -131,8 +133,8 @@ nav {
 .section-map__title {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 36px;
-    font-family: 'Philosopher';
+    font-size: $subtitle-font-size;
+    @include font-main;
 }
 
 iframe {
@@ -153,5 +155,5 @@ footer {
 }
 
 h1 {
-    font-family: 'Roboto!';
+    @include font-accent;
 }
